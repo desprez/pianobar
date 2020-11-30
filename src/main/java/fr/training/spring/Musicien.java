@@ -1,32 +1,17 @@
 package fr.training.spring;
 
-public class Musicien implements Performeur {
+public class Musicien {
 
-	private String morceau;
+	private final String morceau;
 
-	private Instrument instrument;
+	private final Saxophone instrument;
 
-	/**
-	 * @param morceau the morceau to set
-	 */
-	public void setMorceau(final String morceau) {
+	public Musicien(final String morceau) {
 		this.morceau = morceau;
+		instrument = new Saxophone();
 	}
 
-	/**
-	 * @param instrument the instrument to set
-	 */
-	public void setInstrument(final Instrument instrument) {
-		this.instrument = instrument;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see fr.training.spring.Perfomeur#perfome()
-	 */
-	@Override
-	public void perfome() {
+	public void joue() {
 		System.out.println("Le musicien joue " + morceau);
 		instrument.jouer();
 	}

@@ -1,11 +1,7 @@
 package fr.training.spring;
 
-public class Saxophone implements Instrument {
+public class Saxophone {
 
-	/* (non-Javadoc)
-	 * @see fr.training.spring.Instrument#jouer()
-	 */
-	@Override
 	public void jouer() {
 		System.out.println("TOOT TOOT TOOT");
 	}
