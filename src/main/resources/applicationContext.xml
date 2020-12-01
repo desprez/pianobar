@@ -14,6 +14,6 @@
 
 	<bean name="Douglas" class="fr.training.spring.Musicien">
 		<property name="morceau" value="Au clair de la lune" />
-		<property name="instrument" ref="piano" />
+		<property name="instrument" ref="saxophone" />
 	</bean>
 </beans>
