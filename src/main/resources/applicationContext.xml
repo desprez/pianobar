@@ -8,12 +8,4 @@
 	<context:component-scan
 		base-package="fr.training.spring" />
 
-	<bean id="saxophone" class="fr.training.spring.Saxophone" />
-
-	<bean id="piano" class="fr.training.spring.Piano" />
-
-	<bean name="Douglas" class="fr.training.spring.Musicien">
-		<property name="morceau" value="Au clair de la lune" />
-		<property name="instrument" ref="piano" />
-	</bean>
 </beans>

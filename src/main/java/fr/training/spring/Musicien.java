@@ -1,24 +1,15 @@
 package fr.training.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("Douglas")
 public class Musicien implements Performeur {
 
 	private String morceau;
 
+	@Autowired
 	private Instrument instrument;
-
-	/**
-	 * @param morceau the morceau to set
-	 */
-	public void setMorceau(final String morceau) {
-		this.morceau = morceau;
-	}
-
-	/**
-	 * @param instrument the instrument to set
-	 */
-	public void setInstrument(final Instrument instrument) {
-		this.instrument = instrument;
-	}
 
 	/*
 	 * (non-Javadoc)
